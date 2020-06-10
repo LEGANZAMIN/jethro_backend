@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # url: jdbc:mysql://localhost:3306/sfcdb?serverTimezone=UTC&characterEncoding=UTF-8
+    # url: jdbc:mysql://leganzadb.cjclkbv9tksp.ap-northeast-2.rds.amazonaws.com:3306/sfcdb?characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3307/sfcdb?serverTimezone=UTC&characterEncoding=UTF-8
+    username: sfcuser
+    password: sfcuser001
+  devtools:
+    livereload:
+      enabled: true
+
+  jpa:
+    properties:
+      hibernate :
+        dialect : org.hibernate.dialect.MySQL5InnoDBDialect
+        show_sql : true
+    
+server:
+  port: 8000    
+  
+
+
