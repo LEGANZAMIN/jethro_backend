@@ -35,4 +35,10 @@ public class UserController {
 		return userService.findByUserList();
 	}
 
+	// 사용자 목록 조회
+	@GetMapping("/api/v1/users2")
+	public List<User> findByUserList2() {
+		return userService.findByUserList();
+	}
+
 }
